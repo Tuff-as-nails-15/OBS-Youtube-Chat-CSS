@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Hind Madurai");
+@import url("https://fonts.googleapis.com/css?family=Hind Siliguri");
+@import url("https://fonts.googleapis.com/css?family=Hind Siliguri");
+
+yt-live-chat-mode-change-message-renderer, 
+yt-live-chat-viewer-engagement-message-renderer, 
+yt-live-chat-restricted-participation-renderer {
+  display: none !important;
+}
+
+.style-scope yt-live-chat-renderer {
+    background-color: rgb(0, 0, 0, 0);
+}
+
+#items.yt-live-chat-item-list-renderer > *.yt-live-chat-item-list-renderer {
+    background-color: rgb(0, 0, 0, 0);
+}
+.style-scope yt-live-chat-header-renderer {
+    display: none;
+}
+
+yt-live-chat-item-list-renderer[allow-scroll] #item-scroller.yt-live-chat-item-list-renderer {
+    overflow: hidden;
+}
+
+.style-scope yt-live-chat-message-input-renderer {
+    display: none;
+}
+yt-img-shadow#author-photo.no-transition.style-scope.yt-live-chat-text-message-renderer {
+    display: none;
+}
+
+yt-live-chat-text-message-renderer[author-type="owner"],
+yt-live-chat-text-message-renderer[author-type="owner"][is-highlighted] {
+  background-color: transparent !important;
+}
+
+yt-live-chat-text-message-renderer[author-type="moderator"],
+yt-live-chat-text-message-renderer[author-type="moderator"][is-highlighted] {
+  background-color: transparent !important;
+}
+
+yt-live-chat-text-message-renderer[author-type="member"],
+yt-live-chat-text-message-renderer[author-type="member"][is-highlighted] {
+  background-color: transparent !important;
+}
+
+
+yt-live-chat-author-chip #author-name {
+  background-color: transparent !important;
+}
+/* Badges. */
+yt-live-chat-text-message-renderer #author-name[type="owner"],
+yt-live-chat-text-message-renderer #author-name.owner,
+yt-live-chat-text-message-renderer yt-live-chat-author-badge-renderer[type="owner"] {
+  color: #8fb0ff !important;
+}
+
+yt-live-chat-text-message-renderer #author-name[type="moderator"],
+yt-live-chat-text-message-renderer #author-name.moderator,
+yt-live-chat-text-message-renderer yt-live-chat-author-badge-renderer[type="moderator"] {
+  color: #94b0ff !important;
+}
+
+yt-live-chat-text-message-renderer #author-name[type="member"],
+yt-live-chat-text-message-renderer #author-name.member,
+yt-live-chat-text-message-renderer yt-live-chat-author-badge-renderer[type="member"] {
+  color: #8aa7ff !important;
+}
+
+/* Channel names. */
+yt-live-chat-text-message-renderer #author-name {
+  color: #94b4ff !important;
+  font-family: "Hind Madurai";
+  font-size: 20px !important;
+  line-height: 20px !important;
+}
+
+
+/* Messages. */
+yt-live-chat-text-message-renderer #message,
+yt-live-chat-text-message-renderer #message * {
+  color: #ffffff !important;
+  font-family: "Hind Siliguri";
+  font-size: 18px !important;
+  line-height: 18px !important;
+}
+
+/* Outlines */
+yt-live-chat-renderer * {
+  text-shadow: -1px -1px #000000,-1px 0px #000000,-1px 1px #000000,0px -1px #000000,0px 0px #000000,0px 1px #000000,1px -1px #000000,1px 0px #000000,1px 1px #000000;
+  font-family: "Hind Siliguri";
+  font-size: 18px !important;
+  line-height: 18px !important;
+}
+@keyframes anim {
+99.33774834437085% { opacity: 1; transform: none;}
+100% { opacity: 0; }
+}
+
+yt-live-chat-text-message-renderer,
+yt-live-chat-legacy-paid-message-renderer {
+  animation: anim 30200ms;
+  animation-fill-mode: both;
+}
