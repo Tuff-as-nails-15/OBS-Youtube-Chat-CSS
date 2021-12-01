@@ -93,6 +93,7 @@ yt-live-chat-renderer * {
   font-size: 18px !important;
   line-height: 18px !important;
 }
+/* Fade out 30 Seconds. */
 @keyframes anim {
 99.33774834437085% { opacity: 1; transform: none;}
 100% { opacity: 0; }
